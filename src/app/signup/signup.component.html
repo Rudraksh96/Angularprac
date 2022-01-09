@@ -1,0 +1,47 @@
+<!-- <p>signup works!</p> -->
+<div class="container">
+    <div class="screen">
+        <div class="screen__content">
+            <form class="signup" [formGroup] ="signupForm" (ngSubmit)="signup()">
+                <div class="signup__field">
+                    <i class="signup__icon fas fa-user"></i>
+                    <input type="text" class="signup__input" formControlName="name" placeholder="name">
+                </div>
+
+                
+                <div class="signup__field">
+                    <i class="signup__icon fas fa-user"></i>
+                    <input type="email" class="signup__input" formControlName="email" placeholder="email">
+                </div>
+                <div class="signup__field">
+                    <i class="signup__icon fas fa-lock"></i>
+                    <input type="password" class="signup__input" formControlName="password" placeholder="password">
+                </div>
+                <div class="signup__field">
+                    <i class="signup__icon fas fa-user"></i>
+                    <input type="text" class="signup__input" formControlName="age" placeholder="age">
+                </div>
+                <button class="button signup__submit" type="submit">
+                    <span class="button__text">signup Now</span>
+                    <i class="button__icon fas fa-chevron-right"></i>
+                </button>
+                <h4 class="mt-2" style="font: 200; color: #fff;"> Existing User? </h4> 
+              
+            </form>
+            <div class="social-signup">
+                <span style="font: 200; color: #fff;" (click)="navigate()">Login</span>
+                <div class="social-icons">
+                   <i class="fa fa-unlink"></i>
+                    <!-- <a href="#" class="social-signup__icon fab  fa  fa-facebook"></a>
+                    <a href="#" class="social-signup__icon fab fa fa-twitter"></a> -->
+                </div>
+            </div>
+        </div>
+        <div class="screen__background">
+            <span class="screen__background__shape screen__background__shape4"></span>
+            <span class="screen__background__shape screen__background__shape3"></span>
+            <span class="screen__background__shape screen__background__shape2"></span>
+            <span class="screen__background__shape screen__background__shape1"></span>
+        </div>
+    </div>
+</div>

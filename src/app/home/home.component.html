@@ -1,0 +1,30 @@
+<!-- <table>
+    <tr>
+        <td>Name</td>
+        <td>Country</td>
+    </tr>
+
+    <tr *ngFor ="let res of passengers; let i = 'index' " >
+
+        <td>{{i + 1}}</td>
+        <td>{{res.name}}</td>
+    </tr>
+</table> -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4" *ngFor ="let res of passengers  " >
+            <div class="card mt-4" style="width:500px">
+                <p *ngFor  = "let data of res.airline ">
+                <img class="card-img-top rounded-circle" src="{{data.logo}}" alt="Card image" style="width:300px; height:100px">
+                </p>
+                <div class="card-body">
+                  <h4 class="card-title">{{res.name}}</h4>
+
+                  <p *ngFor  = "let data of res.airline " class="card-text">{{data.slogan}}</p>
+                  <a href="#" class="btn btn-primary">See Profile</a>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
